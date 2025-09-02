@@ -29,6 +29,8 @@
                   <Component id="btnOK" alignment="1" min="-2" max="-2" attributes="0"/>
                   <Component id="txtValue" alignment="1" max="32767" attributes="0"/>
                   <Component id="lblResult" pref="354" max="32767" attributes="0"/>
+                  <Component id="lblLeftToRight" alignment="0" max="32767" attributes="0"/>
+                  <Component id="lblRightToLeft" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="34" max="32767" attributes="0"/>
           </Group>
@@ -41,9 +43,13 @@
               <Component id="txtValue" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnOK" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="lblLeftToRight" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblRightToLeft" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="lblResult" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="162" max="32767" attributes="0"/>
+              <EmptySpace pref="81" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -60,6 +66,17 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblResult">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="..."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLeftToRight">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="..."/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblRightToLeft">
       <Properties>
         <Property name="text" type="java.lang.String" value="..."/>
       </Properties>

@@ -77,25 +77,29 @@ public class Palindrome {
         return true;
     }*/
     
-    public static Palindrome isPalindrome(String value){
+    public static Palindrome validate (String value){
+        
+        Palindrome p = new Palindrome();
+
         // Limpia la cadena de texto y le quita espacios y transforma a minúsculas
         String text = value.replaceAll("\\s", "").toLowerCase();
         // Convierte el texto a un array de char
-        char[] letras = text.toCharArray();
+        //char[] letras = text.toCharArray();
         // Determina la longitud del array
-        int count =  letras.length;
+        //int count =  letras.length;
         
-        for(char l : letras){
-            if(l != letras[count - 1]){
-                return false;
-            }else{
-                count -= 1;
-                //count = count - 1;
-                /*if(count < 0){
-                    return true;
-                }*/
-            }
+        p.setLeftToRight(text);
+        
+        p.setRightToLeft(new StringBuilder(text).reverse().toString());
+        
+        if(p.getLeftToRight().equals(p.getRightToLeft())){
+           p.setResult(true); 
+        } else{ 
+            p.setResult(false);
         }
-        return true;
+        
+        ///p.setResult(p.getLeftToRight().equals(p.getRightToLeft()));
+       
+        return p;
     }
 }
